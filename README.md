@@ -27,7 +27,7 @@ Before starting, ensure you have the following installed and configured:
 6. **Kubectl** – Install [kubectl](https://kubernetes.io/docs/tasks/tools/) for Kubernetes management.
 
 ---
-AZURE ARCHITECTURE
+## AZURE ARCHITECTURE ✅
 
  ![AKS Architecture](Untitled.png)
 
