@@ -41,11 +41,7 @@ The project follows a modular architecture to ensure **reusability, scalability,
 │   ├── stage
 │   │   ├── main.tf
 │   │   ├── variables.tf
-│   │   └── backend.tf
-│   └── prod
-│       ├── main.tf
-│       ├── variables.tf
-│       └── backend.tf
+│   │   └── backend.tf  
 ├── modules
 │   ├── aks
 │   │   ├── main.tf
