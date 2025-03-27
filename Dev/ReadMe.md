@@ -23,9 +23,11 @@ Dev/
 ### 🔒 `.terraform.lock.hcl`
 - Ensures consistent provider versions for Terraform deployments.
 - Prevents unintended upgrades that might break infrastructure.
+- Automatically generated when `terraform init` is run.
 
 ### 📦 `backend.tf`
 - Defines **remote state storage** in Azure to enable collaboration.
+- Ensures state consistency across multiple users working on the same infrastructure.
 - Example:
   ```hcl
   terraform {
@@ -37,29 +39,36 @@ Dev/
     }
   }
   ```
+- This avoids local state management issues and ensures **reliable infrastructure provisioning**.
 
 ### 📜 `main.tf`
 - Defines all **Azure resources** for the Dev environment.
-- Uses a **modular approach** to call the AKS module.
+- Uses a **modular approach** to call the AKS module, ensuring reusability and maintainability.
+- Example:
   ```hcl
   module "aks" {
     source              = "../Modules/AKS"
     resource_group_name = var.resource_group_name
     cluster_name        = var.cluster_name
-    node_count         = var.node_count
+    node_count          = var.node_count
   }
   ```
+- This ensures that infrastructure code remains **scalable, reusable, and easy to manage**.
 
 ### ⚙️ `terraform.tfvars`
-- Contains environment-specific values (**Dev environment**):
+- Contains environment-specific values (**Dev environment**), allowing seamless configuration.
+- Example:
   ```hcl
   resource_group_name = "dev-rg"
   cluster_name        = "dev-aks"
-  node_count         = 2
+  node_count          = 2
   ```
+- Helps separate Dev, Staging, and Production environments using different `terraform.tfvars` files.
+- Ensures **configuration isolation** between environments.
 
 ### 📌 `variables.tf`
-- Declares input variables for Terraform.
+- Declares input variables for Terraform, ensuring flexibility and configurability.
+- Example:
   ```hcl
   variable "resource_group_name" {
     type        = string
@@ -77,6 +86,8 @@ Dev/
     default     = 2
   }
   ```
+- Allows **parameterized infrastructure provisioning** with minimal code changes.
+- Improves code **reusability** and ensures easy modification of infrastructure parameters.
 
 ---
 
@@ -102,10 +113,16 @@ terraform destroy
 ---
 
 ## ✅ Best Practices
-✔ Use **remote backend storage** (`backend.tf`) to avoid state conflicts.  
-✔ Store sensitive data in **Azure Key Vault** instead of hardcoding in `terraform.tfvars`.  
-✔ Use a **modular design** (`main.tf` calls reusable AKS module).  
-✔ Maintain separate `terraform.tfvars` files per environment (Dev, Staging, Prod).  
+✔ Use **remote backend storage** (`backend.tf`) to avoid state conflicts and ensure team collaboration.  
+✔ Store sensitive data in **Azure Key Vault** instead of hardcoding in `terraform.tfvars` for security best practices.  
+✔ Use a **modular design** (`main.tf` calls reusable AKS module) to make infrastructure scalable.  
+✔ Maintain separate `terraform.tfvars` files per environment (Dev, Staging, Prod) to isolate configurations.  
+✔ Run `terraform fmt` before committing to ensure standardized formatting.  
+✔ Implement `terraform validate` to check for syntax errors before applying changes.  
+✔ Use **role-based access control (RBAC)** for security when deploying infrastructure in Azure.  
+✔ Follow **Infrastructure as Code (IaC) principles** to make the infrastructure repeatable and maintainable.  
+✔ Implement **Terraform workspaces** for managing multiple environments within the same repository.  
+✔ Use **Terraform modules** for abstraction and reusability to simplify complex infrastructure.
 
 ---
 
@@ -113,6 +130,7 @@ terraform destroy
 - [Terraform Azure Provider Docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 - [Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/)
 - [Best Practices for Terraform](https://learn.hashicorp.com/terraform)
+- [Terraform Backend Configuration](https://developer.hashicorp.com/terraform/language/settings/backends/configuration)
 
 ---
 
