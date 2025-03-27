@@ -66,6 +66,54 @@ The project follows a modular architecture to ensure **reusability, scalability,
 │   └── validate.sh
 └── README.md
 ```
+## 📂 Repository Structure
+
+```
+📦 Repository Root
+│── 📁 [Dev](Dev/)                 # 🛠 Development environment
+│── 📁 [Staging](Staging/)         # 🚀 Staging environment
+│── 📁 [Modules](Modules/)         # 📦 Reusable Terraform modules
+│── 📁 [Pipelines](Pipelines/)     # 🔄 CI/CD pipeline configurations
+│── 📁 [Scripts](Scripts/)         # 📜 Automation and helper scripts
+│── 📜 README.md                   # 📖 Project documentation
+```
+
+---
+
+## 📁 Environment Configurations
+
+### 🛠 [Dev Environment](Dev/)
+- Terraform configuration for the **development** environment.
+- Contains specific variable values, backend configuration, and infrastructure definitions.
+- Click [here](Dev/) to navigate.
+
+### 🚀 [Staging Environment](Staging/)
+- Terraform configuration for the **staging** environment.
+- Includes AKS deployment, networking, and security configurations.
+- Click [here](Staging/) to navigate.
+
+---
+
+## 📦 [Modules](Modules/)
+- Contains reusable Terraform **modules**.
+- Each module is self-contained and follows best practices.
+- Click [here](Modules/) to view.
+
+---
+
+## 🔄 [Pipelines](Pipelines/)
+- Contains **CI/CD pipeline configurations** for Terraform automation.
+- Supports automated `terraform plan`, `apply`, and `destroy` workflows.
+- Click [here](Pipelines/) to view.
+
+---
+
+## 📜 [Scripts](Scripts/)
+- Automation scripts for Terraform state management, validation, and cleanup.
+- Useful for managing infrastructure across multiple environments.
+- Click [here](Scripts/) to view.
+
+---
 
 ---
 
