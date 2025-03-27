@@ -28,6 +28,7 @@ Before starting, ensure you have the following installed and configured:
 
 ---
 AZURE ARCHITECTURE
+
  ![AKS Architecture](Untitled.png)
 
 -----
