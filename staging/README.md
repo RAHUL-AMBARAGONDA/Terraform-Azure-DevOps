@@ -1,6 +1,6 @@
 # 🚀 Terraform Module - Stagging Module
 
-> **Purpose**: This module automates the deployment of infrastructure resources using **Terraform**.
+> **Purpose**: This module automates the deployment of staging environment infrastructure resources using **Terraform**.
 
 ---
 
