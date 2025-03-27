@@ -104,7 +104,7 @@ The project follows a modular architecture to ensure **reusability, scalability,
 ## 🔄 [Pipelines](Pipelines/)
 - Contains **CI/CD pipeline configurations** for Terraform automation.
 - Supports automated `terraform plan`, `apply`, and `destroy` workflows.
-- Click [here](Pipelines/) to view.
+- Click [here](Pipeline/) to view.
 
 ---
 
