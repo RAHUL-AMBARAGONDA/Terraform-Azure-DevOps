@@ -98,10 +98,10 @@ The project follows a modular architecture to ensure **reusability, scalability,
 - Contains reusable Terraform **modules**.
 - Each module is self-contained and follows best practices.
 - Inside modules we have AKS , KEYVAULT and ServicePrincipal
-- Click [here](Modules/) to view.
-- Click [here](Modules/Aks) to view.
-- Click [here](Modules/ServicePrincipal) to view.
-- Click [here](Modules/keyvault) to view.
+- Click [here](Modules/) to view Modules.
+- Click [here](Modules/Aks) to view AKS Module.
+- Click [here](Modules/ServicePrincipal) to view ServicePrincipal Module.
+- Click [here](Modules/keyvault) to view Keyvault Module.
 ---
 
 ## 🔄 [Pipelines](Pipelines/)
