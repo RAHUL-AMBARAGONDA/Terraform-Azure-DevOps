@@ -90,7 +90,7 @@ The project follows a modular architecture to ensure **reusability, scalability,
 ### 🚀 [Staging Environment](Staging/)
 - Terraform configuration for the **staging** environment.
 - Includes AKS deployment, networking, and security configurations.
-- Click [here](Staging/) to navigate.
+- Click [here](staging/) to navigate.
 
 ---
 
