@@ -27,7 +27,7 @@ Before starting, ensure you have the following installed and configured:
 6. **Kubectl** – Install [kubectl](https://kubernetes.io/docs/tasks/tools/) for Kubernetes management.
 
 ---
- Architecture Image (architecture.png)
+ Architecture Image ![AKS Architecture](new.jpeg)
 
 ## Project Structure 📁
 The project follows a modular architecture to ensure **reusability, scalability, and easy management**.
