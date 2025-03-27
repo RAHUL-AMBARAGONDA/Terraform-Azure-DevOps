@@ -134,4 +134,4 @@ terraform destroy
 
 ---
 
-💡 *Maintained by [Your Name]*
+💡 *Maintained by [Rahul Ambaragonda]*
