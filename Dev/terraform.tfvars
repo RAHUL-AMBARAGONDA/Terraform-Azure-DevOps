@@ -1,0 +1,6 @@
+rgname                 = "dev-rahul-rg"
+service_principal_name = "dev-rahul-spn"
+keyvault_name          = "dev-rahul-kv-101"
+SUB_ID = ""
+cluster_name = "dev-rahul-cluster"
+node_pool_name = "devnp"
