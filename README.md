@@ -118,7 +118,7 @@ The project follows a modular architecture to ensure **reusability, scalability,
 ## 📜 [Scripts](Scripts/)
 - Automation scripts for Terraform state management, validation, and cleanup.
 - Useful for managing infrastructure across multiple environments.
-- Click [here](Scripts/) to view.
+- Click [here](scripts/) to view.
 
 ---
 
