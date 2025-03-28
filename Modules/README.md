@@ -17,7 +17,7 @@
 - Useful for **CI/CD pipelines and automation**.
 - Outputs **client ID, secret, and tenant ID**.
 
-### 🏦 [Key Vault Module](./KeyVault/README.md)
+### 🏦 [Key Vault Module](.//README.keyvault.tf/READ.md)
 - **Deploys an Azure Key Vault** for secure secrets management.
 - Supports **Access Policies and RBAC**.
 - Stores sensitive information such as API keys, passwords, and certificates.
