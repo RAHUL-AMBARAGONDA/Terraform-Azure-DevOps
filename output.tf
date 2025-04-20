@@ -12,4 +12,4 @@ output "client_secret" {
   value       = module.ServicePrincipal.client_secret
   sensitive = true
 
-}
+} 
